@@ -1,0 +1,74 @@
+/* Reset */
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif;}
+
+/* Colors inspired by VIBE/Base44 */
+:root {
+    --primary: #1F2937; /* Dark Gray */
+    --accent: #F97316; /* Orange */
+    --bg: #F9FAFB; /* Light Gray */
+}
+
+/* Body */
+body {
+    background: var(--bg);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+header nav a:hover { color: var(--accent); }
+
+/* Sections */
+section {
+    margin: 3rem 0;
+}
+section h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+/* Projects */
+.project-card {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+.project-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.project-card p {
+    font-size: 0.95rem;
+}
+
+/* Contact links */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
